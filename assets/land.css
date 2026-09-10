@@ -40,3 +40,22 @@
         width:250px;
     }
 }
+
+.test{
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.test div{
+    display:flex;
+}
+
+#item{
+    flex: 1 1 50%;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px 10px grey;
+    margin: 20px;
+    height: auto;
+}
