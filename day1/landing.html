@@ -22,7 +22,12 @@
         <nav style="display:flex; align-items: center ;justify-content: space-between; background-color: green;">
             <img style="width: 200px;height: 100px;" src="/assets/favicon.png" alt="company logo">
             <ul style="list-style-type: none; display: flex; gap: 40px;">
-                <li>Home</li><li>About</li><li>Services</li>
+                <!-- <a href="#testi"><li>Home</li></a> -->
+                <a href="#" style="text-decoration: none;"><li>Home</li></a>
+                <li>About</li>
+                <a href="ac.html" style="text-decoration: none;">
+                    <li>Services</li>
+                </a>
                 <li>Contact</li>
             </ul>
         </nav>
@@ -34,14 +39,16 @@
             <img src="https://images.pexels.com/photos/29834252/pexels-photo-29834252.jpeg">
         </div>
         <div>
-            <img src="https://media.istockphoto.com/id/1157108711/photo/hand-control-air-conditioner-remote-controling-temperature.jpg?b=1&s=612x612&w=0&k=20&c=lnAStbkb_3t9cgjBsVZnYHw87HYslIST_Bfd6i4Bk6M=">
+            <a href="ac.html">
+                <img src="https://media.istockphoto.com/id/1157108711/photo/hand-control-air-conditioner-remote-controling-temperature.jpg?b=1&s=612x612&w=0&k=20&c=lnAStbkb_3t9cgjBsVZnYHw87HYslIST_Bfd6i4Bk6M=">
+            </a>
         </div>
         <div>
             <img src="https://images.pexels.com/photos/4386143/pexels-photo-4386143.jpeg">
         </div>
     </div>
     <!-- Service -->
-    <h1 style="text-align: center;margin: 30px;">Testimonials</h1>
+    <h1 id="testi" style="text-align: center;margin: 30px;">Testimonials</h1>
     <div class="test">
         <div>
             <div id="item">
@@ -87,7 +94,7 @@
         </div>
     </div>
     <h1 style="text-align: center;margin: 30px;">How to book</h1>
-    <div style="display: flex; justify-content: space-around; align-items: center;">
+    <div class="book">
         <h1>Login via OTP</h1>
         <h1>-></h1>
         <h1>Select service type</h1>

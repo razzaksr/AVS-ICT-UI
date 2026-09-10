@@ -1,0 +1,91 @@
+Web Application:
+	UI		/ Presentation>> HTML, CSS, JS
+	API		/ Business	> Coding
+	Data		/ Storage		> Database servers/ File systems
+
+
+UI/ Front end:
+
+Static web application: eg: portfolio, Wikipedia, college website, 
+Contents wont change often
+
+	HTML		>> 	Components:
+						text, group, table, div, forms, img, 							navigation
+	CSS			>> positions, size, colors, shapes, borders, 						backgrounds, media query
+
+	Bootstrap/Tailwind
+
+Interactive:
+	validation
+	actions
+	interface/ contact us
+
+	Java script:
+		1. Client side 
+		2. Server side
+
+Dynamic web app:
+	Contents change based on user/ time/ place
+
+	eg: flipkart.com, gmail.com, canarabank.com
+	eg: swiggy, Zomato,
+	eg: bookmyshow
+
+
+Tools:
+	VS CODE
+	intellisense for CSS
+
+
+Phase 1:
+	Door step AC/ Washing Machine/ Refridgerator
+
+	raw360
+
+
+
+	HTML:
+		<tag>		element
+
+		<element attribute="value">......</element>
+			open 		close
+
+		Website:
+			webpages	>> html file>> title
+				components:
+					text: headers, para, strong, 
+					format: b, i, u, font
+					grouping: div, section, header, footer, span
+					list: ul, ol, li
+					table: thead,tbody, tr, th, td,
+					media: img, video, audio
+					form: input, select, button
+					navigate: a, nav
+
+	CSS:
+		inline	>> element style="properties"
+		internal
+		external
+
+		flex
+		alignments:
+			horizontal>> start, end, between, around, justify, 							center, 
+			vertical>> start, center, end
+
+		margin
+		padding
+		colors
+		flex
+		hover
+		table
+		
+
+
+
+https://github.com/razzaksr/AVS-ICT-UI
+
+
+
+
+
+

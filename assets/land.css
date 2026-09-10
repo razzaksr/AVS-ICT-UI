@@ -59,3 +59,21 @@
     margin: 20px;
     height: auto;
 }
+
+.book{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+}
+.book h1{
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px green;
+    padding: 10px;
+}
+.book h1:hover{
+    background-color: black;
+    color:white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px green;
+    padding: 20px;
+}
