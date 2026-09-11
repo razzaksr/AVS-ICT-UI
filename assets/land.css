@@ -1,3 +1,15 @@
+nav{
+    display:flex; 
+    align-items: center ;
+    justify-content: space-between; 
+    background-color: green;
+}
+nav img{
+    width: 200px;height: 100px;
+}
+nav ul{
+    list-style-type: none; display: flex; gap: 40px;
+}
 .foot-row{
     display: flex;
     max-width: 100%;
@@ -43,8 +55,8 @@
 
 .test{
     display: flex;
-    overflow-x: auto;
     width: 100%;
+    justify-content: center;
 }
 
 .test div{
@@ -76,4 +88,22 @@
     border-radius: 20px;
     box-shadow: 10px 10px 10px green;
     padding: 20px;
+}
+*{
+    font-size: 15px;
+    font-family: 'Arkitech';
+}
+nav ul li{
+    box-shadow: 2px 2px 2px white;
+    color:white;
+    text-shadow: 0px 0px 2px white;
+}
+nav ul li:hover{
+    text-decoration: none;
+    box-shadow: 2px 2px 2px white;
+    color:black;
+    background-color: white;
+}
+h1{
+    text-align: center;margin:30px;
 }

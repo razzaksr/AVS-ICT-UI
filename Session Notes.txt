@@ -84,8 +84,19 @@ Phase 1:
 
 https://github.com/razzaksr/AVS-ICT-UI
 
+	
+	HTML Components:
+		open, close, attribute, body
+		<element attribute="value">......</element>
+		<element>......</element>
+	self closing elements:
+		<element attributes="value"/>
+
+	meeting id:     
+		https://meet.google.com/qjw-wczg-bdo
 
 
-
-
-
+		forms
+		tables and spans
+		grid layout
+		
