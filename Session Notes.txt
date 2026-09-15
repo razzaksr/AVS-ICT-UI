@@ -100,3 +100,108 @@ https://github.com/razzaksr/AVS-ICT-UI
 		tables and spans
 		grid layout
 		
+
+
+
+UI/UX:
+
+what is UI:
+		look and feel
+	design components such as text, media, forms, cards, menu
+
+what is UX:
+	user experience of particular process/ activity
+
+	eg: EB bill payment
+	gpay		>> poor ux
+	tneb web 
+	tneb mobile app	>> best ux
+
+
+
+choose any one application
+choose any UI component
+what ux problem observed
+suggestion to improve
+
+
+
+
+
+	Amazon
+	Swiggy
+	IRCTC
+	Google Pay
+	Instagram
+	YouTube
+	Zomato
+	LinkedIn
+
+
+UI/UX Observation
+
+UX Research:
+	Journey maps: each persona and their experience in specific app
+		basic details
+		device
+		goal
+		pain points
+		needs
+
+Data Analysis:
+	heat maps
+	bounce back ratio
+	performance metrics
+	analyse dashboard:
+		Microsoft clarity
+		Light house extension
+		Google Analytics
+
+Usability test
+JMeter>> performance and load test
+CDN's
+
+
+UX Flow/ Journey map/ Direction:
+Eg:
+	Swiggy
+	login
+	search food
+	add to cart
+	checkout
+	payment
+	tracking>> ordered, preparing, transit, delivered
+
+Task: Create Journey map/ road map of following functionalities
+	1. DocOnline, Booking appointment 
+	2. IRCTC Tatkal ticket booking
+	3. TNEB bill payment via GPay
+
+Minimum Value Product
+
+
+
+Psychology:
+must have color code
+UI with proper flow
+
+Design: based on journey map and psychology of UI:
+tools:
+Canva
+figma:
+
+
+
+
+
+
+Wireframes:
+low level>>>
+high level>>>
+
+Prototype
+Iterate
+
+
+Open figma>> create design by selecting frames like android compact, extends, based on device then design.
+Once design done goto "F" and select File>> Save local copy to download ".fig" so that we can import
