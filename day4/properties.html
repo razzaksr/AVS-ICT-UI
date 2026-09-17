@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read and Update Properties</title>
+    <script>
+        window.onload = function(){
+            var media = document.querySelector("img")
+            media.addEventListener("click",function(){
+                media.setAttribute("width","100px")
+                media.setAttribute("height","400px")
+            })
+            media.addEventListener("dblclick",function(){
+                media.removeAttribute("src")
+                media.setAttribute("alt","Image removed via JS")
+            })
+            var comp = document.querySelector("input")
+            comp.addEventListener("mouseenter",function(){
+                this.setAttribute("type","checkbox")
+            })
+            comp.addEventListener("mouseleave",function(){
+                this.setAttribute("type","radio")
+            })
+            comp.addEventListener("click",function(){
+                this.setAttribute("type","button")
+                this.value = "Click to change"
+            })
+            comp.addEventListener("dblclick",function(){
+                this.value = ""
+                this.setAttribute("type","text")
+                this.setAttribute("placeholder","polymorphism")
+            })
+        }
+    </script>
+</head>
+<body>
+    <img src="/assets/favicon.png"/>
+    <input type="text" />
+</body>
+</html>

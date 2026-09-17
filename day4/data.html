@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        // json object
+        window.onload = function(){
+            const webpages = {
+                "day1":"/day1/ac.html",
+                "day2":["/day2/technicians.html","/day2/about.html"],// array/list object
+                "day3":"/day3/UI_UX Mine.xlsx"
+            }
+            var fetched = document.querySelector("#fetch")
+            var present = document.querySelector("iframe")
+            fetched.addEventListener("blur",function(){
+                switch(fetched.value){
+                    case "intro":present.setAttribute("src",webpages.day1);
+                                    break;
+                    case "components": var exact = prompt("navigate 1.About 0.technicians")
+                                    if(exact==1)
+                                        present.setAttribute("src",webpages.day2[0])
+                                    else present.setAttribute("src",webpages.day2[1]);
+                                    break;
+                    case "analytics": present.setAttribute("src",webpages.day3);
+                                    break;
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <h1>IFrame Object demo</h1>
+    <input type="text" id="fetch"/>
+    <iframe style="width: 100%;height: 90vh;" src="/day1/landing.html"></iframe>
+    <h1>Frame endpoint</h1>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script demonstration</title>
+</head>
+<body>
+    <p>Welcome all to Java script session!</p>
+    <script>
+        // selecting element via tagName
+        var para = document.getElementsByTagName("p")[0];
+        para.style.color="white";
+        para.style.backgroundColor="maroon";
+        // event when single click on the paragraph
+        para.addEventListener("click",function(){
+            para.style.color = "yellow"
+            para.style.backgroundColor = "black"
+            para.textContent = "Single Click Activated"
+        })
+        // event when double click the paragraph
+        para.addEventListener("dblclick",function(){
+            para.style.color = "white"
+            para.style.backgroundColor = "maroon"
+            para.textContent = "Double Click Activated"
+        })
+    </script>
+</body>
+</html>

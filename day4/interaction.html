@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Output</title>
+    <script>
+        window.onload = function(){
+            const skill = prompt("Tell me what is your primary technical skill? ")
+            var consent = confirm(`Are sure looking roles for the ${skill}`)
+            if(consent){
+                var result = document.querySelector("h1")
+                if(skill=="Spring Boot"||skill=="Django"||skill=="Node"||skill=="WebAPI"||skill=="Angular"){
+                    result.innerHTML = `For ${skill} you can try for Web Developer role`
+                    // alert(`For ${skill} you can try for Web Developer role`)
+                }else if(skill=="ISTQB"||skill=="Selenium"||skill=="JUnit"||skill=="Jest"){
+                    result.innerHTML = `For ${skill} you can try for SDE-Testing role`
+                    // alert(`For ${skill} you can try for SDE-Testing role`)
+                }else if(skill=="Flutter"||skill=="Swift"||skill=="Kotlin"){
+                    result.innerHTML = `For ${skill} you can try for App developer role`
+                    // alert(`For ${skill} you can try for App developer role`)
+                }else{
+                    result.innerHTML = `For ${skill} you can try for Support role`
+                    // alert(`For ${skill} you can try for Support role`)
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Your Role Would Be </h1>
+</body>
+</html>

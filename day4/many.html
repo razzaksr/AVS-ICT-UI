@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading from Java script</title>
+    <script>
+        window.onload = function(){
+            const drives = ["CTS","LTI","ZOHO","Wipro","Infosys","TCS"]
+            let listed = document.querySelector("ol")
+            function dump(){
+                for(var index=0;index<drives.length;index++){
+                    var item = document.createElement("li")
+                    item.textContent = drives[index]
+                    listed.appendChild(item)
+                }
+            }
+            dump()
+        }
+    </script>
+</head>
+<body>
+    <ol type="I">
+    </ol>
+</body>
+</html>

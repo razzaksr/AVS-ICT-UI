@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <script>
+        window.onload = function(){
+            const rupees = prompt("Enter INR ")
+            const dollar = rupees/95.89
+            const pound = rupees/128.42
+            document.querySelectorAll("h1")[0].innerHTML=`USD ${dollar} for Rs. ${rupees}`
+            document.querySelectorAll("h1")[1].innerHTML=`UKP ${pound} for Rs. ${rupees}`
+        }
+    </script>
+</head>
+<body>
+    <h1>USD </h1>
+    <h1>UKP </h1>
+</body>
+</html>

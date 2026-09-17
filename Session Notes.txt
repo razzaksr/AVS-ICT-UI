@@ -205,3 +205,86 @@ Iterate
 
 Open figma>> create design by selecting frames like android compact, extends, based on device then design.
 Once design done goto "F" and select File>> Save local copy to download ".fig" so that we can import
+
+Programming:
+	data manipulations
+	CRUD Operations
+
+
+JavaScript:
+	Programming language:
+	Server side: using as standalone via nodejs
+	Client side: embed with html>> to make static web pages to interactive
+		messages/ acknowledgements
+		validations
+		calculators
+		games
+		styles
+		crud operations by events:
+			click, mouseenter, mouseleave, keypressed, keyreleased, load, double click
+
+	java script:
+		applications: 
+			desktop, web(node,express, react, angular), 
+			mobile(react-native), AI, Analytics
+		input/output
+		data types: 
+				Number, String, Object(array, json, userdefined), Null, 						undefined, date, 
+		variables: var, const, let
+			eg: var myName="Razak Mohamed"
+				var myAge = 35
+				var myWeight = 61.2
+				var mySkills = ["Spring","FastAPI","Angular","React","WebAPI"]
+				var myExperience = { 
+					"company":"MultiCoreWare","years":4, "role":"Senior 						Developer"
+				}
+		functions
+		decision making statements>> if else, switch
+		loop statements	>> while, for, do while
+		
+
+		where to write script:
+			inline, internal(head <script></script>), external(.js)
+
+		selectors: document object model(DOM)>> inorder to rach or select elements and perform operations
+			id
+			class
+			tagName(element)>> index starts with 0...n since there are multiple elements with same tagName
+			querySelector
+
+
+	task:
+		create table where perform followings
+			1. background color, text color, border, font size when mouse enter
+			2. reset initial styles and text when mouse leave
+			
+	input:
+		forms
+		prompt>> java script
+
+	output:
+		html components>> text, images, 
+		alert, console.log , innerHTML, textContent>> java script
+
+
+
+	Objects:
+		In built:
+			document>> getElementById, querySelector, 									getElementsByTagName
+			window>> onload, init
+			location
+			console
+			array/list
+			localStorage
+	
+		Load elements dynamically using JS
+
+	Task:
+		assume we have list of contacts in which each contact may have name and email
+		create html in where load the contact name and email in text field based on prompt input of index
+
+	eg: [
+			{"name":"Razak Mohamed","email":"razaksrmd@gmail.com"},
+			{"name":"Prakash","email":"prakash@gmail.com"},
+		]
+	in prompt if i mention 1 then load Prakash and prakash@gmail.com in text fields
