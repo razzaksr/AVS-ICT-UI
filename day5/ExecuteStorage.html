@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Storage</title>
+    <script>
+        window.onload=function(){
+            var found = localStorage.getItem("avsdemo").split(",")
+            var biggest = 0
+            found.forEach(function(each){
+                if(biggest<each) biggest=each
+            })
+            document.querySelector("div").innerHTML=biggest
+        }
+    </script>
+</head>
+<body>
+    <div></div>
+    <button onclick="localStorage.removeItem('avsdemo')">Delete</button>
+</body>
+</html>

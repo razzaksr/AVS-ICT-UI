@@ -317,3 +317,24 @@ JavaScript:
 			3. create new upi id
 			4. update existing id
 			5. remove existing id
+
+
+		Perm memory:
+			localStorage>> always sores data as String
+				setItem("var",value)
+				getItem("var")
+				removeItem("var")
+
+		Use case:
+			Campus Connect >> AVS College Placement and Training Platform
+				Company>> visit, name, role, basic, count, prerequisite >> JSON
+
+				Perm >> list of companies(JSON)
+				temp >>
+				CRUD
+				UI
+
+			Task:
+				1. filter by skill
+				2. filter by salary between two user defined start and end range
+				3. filter by role

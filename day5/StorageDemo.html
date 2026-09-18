@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage demo</title>
+    <script>
+        //localStorage.setItem("avsdemo",String([98,12,56,34,10]))
+        window.onload=function(){
+            // copy perm data to temp storage
+            let gathered = localStorage.getItem("avsdemo")
+            document.querySelector("p").innerHTML=gathered
+            document.querySelector("h1").innerHTML=gathered[0]
+            // changes happens in temp
+            var individuals = gathered.split(",")
+            individuals = individuals.map(function(each){
+                each -= each*(0.010)
+                return each
+            })
+            localStorage.setItem("avsdemo",String(individuals))
+        }
+    </script>
+</head>
+<body>
+    <p></p>
+    <h1></h1>
+</body>
+</html>
