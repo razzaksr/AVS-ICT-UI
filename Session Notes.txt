@@ -297,11 +297,23 @@ JavaScript:
 
 		Basic Conversion
 		JSON object and its functions
+	Array/List:
+		push
+		forEach
+		findIndex>> return position of matched value
+		find>> return the value of matching
+		splice>> delete
+		filter>> short list new list by condition
+		map>> value, index 
 	
 		CRUD operations in array
 		
 		task:
 			Create array/list where you keep upi id's and perform below operations
-			1. View all id's as check boxes
-			2. Print user selected checkbox upi id in another text field
+			1. View all id's as radio boxes
+			2. Print user selected radio upi id in another text field
 			
+
+			3. create new upi id
+			4. update existing id
+			5. remove existing id
