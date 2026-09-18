@@ -288,3 +288,20 @@ JavaScript:
 			{"name":"Prakash","email":"prakash@gmail.com"},
 		]
 	in prompt if i mention 1 then load Prakash and prakash@gmail.com in text fields
+
+
+
+		window>> onload, print
+		location( navigation)
+			assign
+
+		Basic Conversion
+		JSON object and its functions
+	
+		CRUD operations in array
+		
+		task:
+			Create array/list where you keep upi id's and perform below operations
+			1. View all id's as check boxes
+			2. Print user selected checkbox upi id in another text field
+			

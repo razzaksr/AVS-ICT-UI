@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Objects</title>
+    <script>
+        window.onload=function(){
+            document.querySelector("#print").addEventListener("click",function(){
+                window.print()
+            })
+            document.querySelector("#nav").addEventListener("click",function(){
+                window.location.assign("/day4/data.html");
+            })
+            const myData = {
+                "email":"razaksrmd@gmail.com",
+                "role":"Senior Architect",
+                "exp":["MCW","Infosys","Tieto","ICT"]
+            }
+            document.querySelector("#view").addEventListener("click",function(){
+                var result = document.querySelector("p")
+                // result.textContent = `${myData.email} ${myData.role} ${myData.exp}`
+                // json to plain string conversion
+                result.textContent = JSON.stringify(myData)
+            })
+            let simple='{"app":"trello","nature":"Project Management"}'
+            document.querySelector("#convert").addEventListener("click",function(){
+                alert(typeof(simple))
+                simple = JSON.parse(simple)
+                alert(typeof(simple))
+            })
+            document.querySelector("#par").addEventListener("click",function(){
+                const text = "12"
+                alert(parseInt(text)+2)
+                var fract = "9.8"
+                // fract=parseFloat(fract)
+                fract = Number(fract) // can be used both int and float
+                if(fract>9.0) {
+                    fract = fract/2
+                    fract += fract*(0.010)
+                    alert("Eligible for PL "+fract)
+                }
+                else alert("Not eligible")
+            })
+        }
+    </script>
+</head>
+<body>
+    <iframe src="/day1/landing.html" style="width: 100%;height: 90vh;"></iframe>
+    <button id="print">Print</button>
+    <button id="nav">Navigate</button>
+    <button id="view">Show JSON</button>
+    <button id="convert">JSON Conversion</button>
+    <button id="par">Basic Conversion</button>
+    <p></p>
+</body>
+</html>
