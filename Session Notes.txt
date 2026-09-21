@@ -382,3 +382,37 @@ JavaScript:
 			[0-9]			>> only numbers
 			//d			>> digits
 			//s			>> space
+
+
+		Task:
+			Validate the form fields contains below
+			Company>> visit, name, role, basic, hr_email, hr_contact
+
+
+		Server Side Java Script: stand alone>> Node JS
+			front end	>> React, Angular, Vue, Next
+			back end	>> Express
+			
+		React: node based front end Library
+
+			babel		
+			web pack
+
+			index.html
+				|
+			index.js	>> server side js file
+				react-dom
+				java script
+				java script xml/java script extension>> JSX
+				
+				html elements		>> react components
+					eg: h1			eg: h1 >> jsx/component
+				html attributes		>> react properties
+					eg: img alt src	>> 	eg: <img src="" alt="" />
+				html class			>> react class
+					eg: div class="alpha"		>> div className="alpha"
+				html events		>> react events
+					eg: onclick		eg: onClick
+						ondblclick			onDblClick
+
+			
