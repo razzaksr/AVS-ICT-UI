@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execption handling demo</title>
+    <script>
+        window.onload=function(){
+            let packages = [12.6,2.5,9.2,5.6,3.1,4.9,7.2]
+            var box = document.querySelector("#desired")
+            box.addEventListener("blur",function(){
+                try{
+                    var position = this.value
+                    if(position>=packages.length||position<0)
+                        throw "Index out of bounds exception"
+                    alert(`the desired salary is ${packages[position]}`)
+                }catch(avs){
+                    alert(`${avs} will be handled here`)
+                    alert(`enter the position between 0 and ${packages.length-1}`)
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="desired">
+</body>
+</html>

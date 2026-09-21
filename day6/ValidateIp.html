@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <script src="/assets/handle.js"></script>
+    <style>span{color: red;}</style>
+</head>
+<body>
+    <form name="loan" method="post" onsubmit="return verify()">
+        <div><input type="text" name="customer"><span id="customerErr"></span></div>
+        <div><input type="text" name="aadhaar"><span id="aadhaarErr"></span></div>
+        <div><input type="text" name="pan"><span id="panErr"></span></div>
+        <div><input type="text" name="email"><span id="emailErr"></span></div>
+        <div>
+            <input type="submit" value="Apply">
+            <input type="reset" value="Cancel">
+        </div>
+    </form>
+</body>
+</html>

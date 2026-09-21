@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Action and Validation</title>
+    <script>
+        function collected(){
+            var amount = document.forms["pl"]["principle"].value
+            var roi = document.forms["pl"]["roi"].value
+            try{
+                // monthly interest rate
+                var monthly = roi/12/100;
+                // calculatre PL 
+                if(isNaN(amount)) throw "Invalid Input"
+                var EMI = amount * monthly * Math.pow(1+monthly,36)/(Math.pow(1+monthly,36)-1)
+                var total = EMI*36
+                alert(`${total} with ECS of ${EMI} for ${amount} with ${roi} `)
+            }catch(praveen){
+                alert(`expectes amount in numbers `)
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="pl" method="post" onsubmit="return collected()">
+        <input type="text" name="principle"><br/>
+        Select ANy following ROI for your loan
+        <input type="radio" name="roi" value="16.8">16.8
+        <input type="radio" name="roi" value="23.8">23.8
+        <input type="radio" name="roi" value="29.7">29.7
+        <input type="radio" name="roi" value="33.3">33.3
+        <br/>
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>

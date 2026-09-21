@@ -338,3 +338,47 @@ JavaScript:
 				1. filter by skill
 				2. filter by salary between two user defined start and end range
 				3. filter by role
+
+
+
+		Customer interactive web app:
+		Exception handling:
+			customers would make mistakes and it has to be fixed
+		exception: abnormal condition/input which could cause app terminates/behave abnormally
+			eg: while entering wrong upi pin customer excepts to be offered another chance where 					wrong pin is exception and another chance is handling
+
+		how to handle the exception:
+			try{
+				// possible statements would cause exception
+			}catch(var){
+				// handle the throwed exception from try block
+				// here we offer another chance / relevant action
+			}
+
+			execution order:
+				exception occurred in try
+				throwed to catch
+				catch statement would execute and wont return to try block
+
+
+
+		Form validation with exception handling:
+
+		regular expression:
+			*		zero or more
+			+		compulsory 1 time at least
+			?=		any in the given set
+			.		matches
+			$		end of the string
+			^		begin check/ exclude
+			{}		limit/ count of chars 
+					{12}		>> exactly 12 chrs
+					{2,10}	>> min2, max10
+					{,10}		>> min can be any but max 10
+					{2,}		>> min 2 max can be any
+
+		
+			[a-zA-z]		>> ONLY alpha
+			[0-9]			>> only numbers
+			//d			>> digits
+			//s			>> space

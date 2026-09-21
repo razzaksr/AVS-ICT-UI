@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling exception</title>
+    <script>
+        window.onload=function(){
+            document.querySelector("button").addEventListener("click",function(){
+                var amount = document.querySelector('input[name="principle"]').value
+                var roi = document.querySelector('input[name="roi"]:checked').value
+                try{
+                    // monthly interest rate
+                    var monthly = roi/12/100;
+                    // calculatre PL 
+                    if(isNaN(amount)) throw "Invalid Input"
+                    var EMI = amount * monthly * Math.pow(1+monthly,36)/(Math.pow(1+monthly,36)-1)
+                    var total = EMI*36
+                    alert(`${total} with ECS of ${EMI} for ${amount} with ${roi} `)
+                }catch(praveen){
+                    alert(`expectes amount in numbers `)
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="principle">
+    Select ANy following ROI for your loan
+    <input type="radio" name="roi" value="16.8">16.8
+    <input type="radio" name="roi" value="23.8">23.8
+    <input type="radio" name="roi" value="29.7">29.7
+    <input type="radio" name="roi" value="33.3">33.3
+    <button>PL Calculate</button>
+</body>
+</html>
