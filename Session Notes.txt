@@ -416,3 +416,135 @@ JavaScript:
 						ondblclick			onDblClick
 
 			
+
+			Setting up node:
+				download node from nodejs.org
+				install
+				open your command prompt and type following command to check installation:
+					node -v
+				node package manager >> npm
+					npm -v
+
+			Running first standalone JS file:
+				filename.js
+			Command:
+				node filename.js
+
+			Task:
+				create array of person's weight where print only featherweights(weight between 40 to 60 called featherweight)
+
+
+
+			user input: prompt-sync >> library
+				npm install prompt-sync
+
+			Node Project:
+				package.json >> config
+					dependencies >>libraries/ modules information 
+					name		> name of the project
+					script		> runnable commands via "node"
+									start			>> npm start
+									test			>> npm test
+									build			>> npm build
+
+				node_modules>> folder
+					physically all direct and dependent libraries located
+				package-lock.json>> config >> no need to alter
+					detailed information about project, versions, dependencies versions,
+
+			Ways to setup node project:
+				1. whenever install any libraries using "npm i"	
+					project would seup automatically bu considering current folder as project name
+				
+				2. npm init >> interactive way to create node project
+					name
+					main file
+					version
+				3. npm init -y >> create project automatically by considering current folder as name of the propject
+
+		Fix ps1 error:
+			Set-ExecutionPolicy RemoteSigned -Scope CurrentUser					
+
+			Ways to create React Project
+				important libraries:
+					react >> for ui components
+					react-dom >> for connecting each component and 								with root html
+			1. Legacy way:
+				npm install -g create-react-app
+				npm create-react-app project-name
+
+			2. using npx:
+				npx create-react-app app-name
+
+			3. using vite js:
+				npm create vite@latest project-name -- --template react
+			eg:
+				npm create vite@latest demo-app -- --template react
+
+				to run vite based react project:
+					npm run dev
+
+		Vite based React Project Structure:
+			package.json
+			package-lock.json
+			node_modules
+			public folder>> favicon
+			src>> main.jsx, app.jsx, index.css, app.css
+			index.html
+
+		Architecture:
+			User defined Component >> UC1.jsx
+			User defined Component >> UC2.jsx
+			User defined Component >> UC3.jsx 
+			main.jsx(component) >> react-dom
+				UC1, UC2, UC3 >> mwention by import it properly
+			index.html
+			
+
+
+
+		User defined component: Filename.jsx 
+			here we can create functions and returns our templates
+			eg:
+				const ComponentName = () => {
+					return(
+						<h1>
+						<img>
+						.....
+					)
+				}
+			
+			how to include Userdefined in main.jsx
+			1. Function in jsx has to be exported
+			2. In main.jsx/ other files where you would like to import the 					current component 
+
+		Task:
+			Create Following components in one jsx or individual jsx for 				each
+			1. Technician Component where display Raw 360 technicians 				profile
+			2. About Component where display About page of Raw 360
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			

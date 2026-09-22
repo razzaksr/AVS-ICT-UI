@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "scripts": {
+    "start":"node Alone.js"
+  }
+}
