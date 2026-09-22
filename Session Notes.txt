@@ -524,7 +524,10 @@ JavaScript:
 			2. About Component where display About page of Raw 360
 
 
-
+		Styling in JSX:
+			inline
+			internal
+			external
 
 
 

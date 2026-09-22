@@ -1,0 +1,8 @@
+p{
+    color: red;
+    background-color: blue;
+}
+p:hover{
+    color: blue;
+    background-color: red;
+}

@@ -1,11 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Items, { Projects } from './Tabs'
+import { Photos } from './Meds'
 
 createRoot(document.getElementById('root')).render(
   <>
-    <Items/>
-    <Projects />
+    <Photos/>
+    {/* <Items/>
+    <Projects /> */}
   </>
   // <StrictMode>
   //   <h1>Hi All welcome to React Development</h1>
