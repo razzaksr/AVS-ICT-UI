@@ -2,10 +2,16 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Items, { Projects } from './Tabs'
 import { Photos } from './Meds'
+import { Perform } from './Organize'
+import { DemoStateHook } from './Monitor'
+import { DeamonThread } from './Thread'
 
 createRoot(document.getElementById('root')).render(
   <>
-    <Photos/>
+    {/* <Perform/> */}
+    {/* <DemoStateHook/> */}
+    <DeamonThread/>
+    {/* <Photos/> */}
     {/* <Items/>
     <Projects /> */}
   </>

@@ -529,14 +529,31 @@ JavaScript:
 			internal
 			external
 
+		Events:
+			inline
+			internal
+			external
 
 
+			event.target >> exactly refers the current component and its properties such as innerHTML, style, text,...........
+		
+
+		
+		React Hooks: state changes, functional components
+			useState			>> within component state changes triggers while user events
+			useEffect			>> happens whenever component get loaded/ specified component state changes
+			useNavigate		>> navigate between components
+			useParams		>> pass data from one component to another
 
 
+			useState:
+			 	var[stateName,setStateName] = useState(default)
+				eg:
+				var[text,setText]=useState("")
 
 
-
-
+			useEffect:
+				useEffect(callback,[when to reload]
 
 
 
