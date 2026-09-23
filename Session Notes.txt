@@ -577,10 +577,14 @@ JavaScript:
 				Routes
 					Route>> each component with path(when path selected 						component will show)
 
+			Property Drilling:
+				<Component property={value/function}></Component>
+				eg:
+				<img src="" alt=""/>
 
-
-
-
+			Spread operator:
+			
+			Handling multiple fields of useState(JSON) in a single event function using spread operator
 
 
 
