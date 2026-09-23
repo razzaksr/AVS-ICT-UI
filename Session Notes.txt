@@ -555,8 +555,27 @@ JavaScript:
 			useEffect:
 				useEffect(callback,[when to reload]
 
+			useRef:
+				reach the component just like DOM, however it offers centralized initialization which can use later
 
+			useContext:
+				data transfer across the components since legacy property way is more time elapsing 
+			Provider:
+				1. Context has to be created
+				2. include the Consumer components 				in Provide Component JSX by 					surrounding Context.Provider Grouping
+			Consumers:
+				1. collect context data from provider 						by useContext()
 
+			useMemo: syntax quite like useEffect
+				useMemo(()=>callback,[when to repeat])
+				avoid unnecessary 								recalculation/repeatation
+
+		react-router-dom>> routing module
+			npm i react-router-dom
+		
+			BrowserRouter
+				Routes
+					Route>> each component with path(when path selected 						component will show)
 
 
 
