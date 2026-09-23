@@ -587,7 +587,22 @@ JavaScript:
 			Handling multiple fields of useState(JSON) in a single event function using spread operator
 
 
+			CRUD with JSON-Server
+			JSON-SERVER>> json file based server with inbuilt endpoints to perform CRUD operations
+				run:
+					npx json-server --watch campus.json --port 3000
+				eg: call enpoints via fetch api
+					trainings>> endpoint
+						to create new entry>> 
+							post mapping>>http://localhost:3000/
+						to update existing>>
+							put/patch mapping>>http://localhost:3000/trainingId
+						to delete existing>>
+							delete mapping>> http://localhost:3000/trainingId
 
-
+						to read existing>>
+							get mapping>> http://localhost:3000/ >> read all
+						get mapping>> http://localhost:3000/trainingId >>one
+				
 
 			
