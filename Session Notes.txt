@@ -603,6 +603,127 @@ JavaScript:
 						to read existing>>
 							get mapping>> http://localhost:3000/ >> read all
 						get mapping>> http://localhost:3000/trainingId >>one
-				
+
+	Angular:
+		Type script based node Framework developed and maintaining by Google
+		version: LTS 20
+				22
+		
+		Type Script:
+			alpha=98
+			beta(){
+				return "hi"
+			}
+		Java Script:
+			creating variable
+				var/let/const alpha=98
+			function beta(){
+				return "hi"
+			}
+
+		Its Class based Components unlike functional components in react
+		
+		
+		
+		working flow/ architecture:
+			browser
+			
+			Angular Component
+				Component.ts
+				Component.spec.ts
+				Component.html
+				Component.css	
+
+
+		How to setup Angular:
+			npm i -g @angular/cli
+
+		Verify angular setup:
+			ng version
+
+		Create new project
+			ng new app-name
+
+		Project Structure:
+			node_modules
+			angular.json
+			package.json
+			package-lock.json
+			public>> assets
+			src
+				index.html
+				main.ts
+				app
+					app.route.ts
+					app.html
+					app.ts
+					app.css
+					app.spec.ts
+		Run the project:
+			ng serve
+			npm start
+
+		Binding:
+			one way
+			model
+			property
+			event binding
+			two way:
+				Component must import FormsModule
+
+		Component Creation:
+			ng generate component folder/component-name
+			ng g c folder/component-name
+
+			eg:
+				ng g c basics/match  		
+				src
+					app
+						basics
+							match.ts
+							match.css
+							match.html
+							match.spec.ts
+
+		when you wish to include beta inside alpha	
+			Component1>> alpha>>
+				import Beta inside alpha.ts
+				add <app-beta></app-beta> inside alpha.html
+			Component2>> beta>>
+				beta.ts>> selector >> app-beta
+
+
+
+		Pipes:
+			not modify update display in different forms
+	eg: Date, Currency, UpperCase, lowercase,Number, Percent
+
+
+
+		Dependency Injection:
+			guard, service, directives
+			when ever required above we can simple inject without new object
+
+			typically object creation leads many memory wastage
+			where DI offers singleton approach so that memory would be created only once and it 			can be invoked by many
+
+		Service:
+			desired Class that can be used across components
+			command to create service:
+				ng generate folder/service-name
+				eg:
+					ng g s services/hackathon
+					src
+						app
+							services
+								hackathon
+			
+		Angular Forms:
+			Template Driven Forms:
+				no need form tag since FormsModule can handle two way bindings
+			Task: implement dependency injection with template driven forms
+				GitHub Signup: involves name, email, contact, password
+			Reactive Forms
+
 
 			

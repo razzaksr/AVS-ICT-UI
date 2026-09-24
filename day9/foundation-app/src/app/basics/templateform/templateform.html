@@ -1,0 +1,15 @@
+<p>templateform works!</p>
+
+<!-- hackathon event scheduling -->
+<input type="text" [(ngModel)]="hack.eventName">
+<input type="text" [(ngModel)]="hack.eventVenue">
+<input type="text" [(ngModel)]="hack.eventOrganizer">
+<input type="text" [(ngModel)]="hack.eventReward">
+<select [(ngModel)]="hack.eventTopics" multiple>
+    <option>AI</option>
+    <option>Agri</option>
+    <option>Banking</option>
+    <option>Natural Respurce</option>
+</select>
+<input type="date" [(ngModel)]="hack.eventDate">
+<button (click)="handleSubmit()">Schedule</button>
