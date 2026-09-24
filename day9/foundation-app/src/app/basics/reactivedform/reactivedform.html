@@ -1,0 +1,49 @@
+<p>reactivedform works!</p>
+<button (click)="whenLogout()">Logout</button>
+<form action="" [formGroup]="SchduleForm" (ngSubmit)="whenSubmit()">
+    <div>
+        <input type="text" formControlName="eventName">
+        @if (SchduleForm.controls.eventName.touched&&SchduleForm.controls.eventName.invalid) {
+            <p style="color: red;">Invalid Hackathon Name</p>
+        }
+    </div>
+    <div>
+        <input type="text" formControlName="eventVenue">
+        @if (SchduleForm.controls.eventVenue.touched&&SchduleForm.controls.eventVenue.invalid) {
+            <p style="color: red;">Invalid Venue</p>
+        }
+    </div>
+    <div>
+        <input type="text" formControlName="eventOrganizer">
+        @if (SchduleForm.controls.eventOrganizer.touched&&SchduleForm.controls.eventOrganizer.invalid) {
+            <p style="color: red;">Invlaid Organizer</p>
+        }
+    </div>
+    <div>
+        <input type="text" formControlName="eventReward">
+        @if (SchduleForm.controls.eventReward.touched&&SchduleForm.controls.eventReward.invalid) {
+            <p style="color: red;">Requires valid reward</p>
+        }
+    </div>
+    <div>
+        <select formControlName="eventTopics" multiple>
+            <option>AI</option>
+            <option>Agri</option>
+            <option>Banking</option>
+            <option>Natural Respurce</option>
+        </select>
+        @if (SchduleForm.controls.eventTopics.touched&&SchduleForm.controls.eventTopics.invalid) {
+            <p style="color: red;">Any two topics must be choosed</p>
+        }
+    </div>
+    <div>
+        <input type="date" formControlName="eventDate">
+        @if (SchduleForm.controls.eventDate.touched&&SchduleForm.controls.eventDate.invalid) {
+            <p style="color: red;">Event date required</p>
+        }
+    </div>
+    <div>
+        <button type="submit">Schedule</button>
+    </div>
+</form>
+<h1>{{info}}</h1>

@@ -5,10 +5,14 @@ import { Match } from './basics/match/match';
 import { Game } from './services/game';
 import { Templateform } from './basics/templateform/templateform';
 import { Confirmation } from './basics/confirmation/confirmation';
+import { Reactivedform } from './basics/reactivedform/reactivedform';
+import { Login } from './basics/login/login';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule,Match,Templateform,Confirmation],
+  // imports: [FormsModule,Match,Templateform,Confirmation],
+  // imports: [FormsModule,Match,Reactivedform,Confirmation],
+  imports: [Login,Reactivedform,Templateform,RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

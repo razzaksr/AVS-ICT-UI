@@ -723,7 +723,24 @@ JavaScript:
 				no need form tag since FormsModule can handle two way bindings
 			Task: implement dependency injection with template driven forms
 				GitHub Signup: involves name, email, contact, password
-			Reactive Forms
-
-
+			Reactive Forms:
+				Using ReactiveFormModule and FormControl over FormModule and ngModel
+				forms will be created at type script
+				
+			
+		Authentication using local storage:
+			Guard creation: ng g guard guards/auth
+			auth-guard: 
+			app.route.js>> canActivate
+			
+			Components:
+				Login				>> create localstorage item with true whn successful login
+				ReactivedForm			>> occurs whn successful login, enable logout by remove localstorage and navigate to login
+				TemplateForm			>> enable logout by remove localstorage and navigate to login
+				App.html				>> <router-outlet></router-outlet> for ennable these authentication
+				app.ts				>> import RouterOutlet so that you can use router-outlet in this html
+			Guard
+				auth>> canActiveFn >> check every request whether loggedin or not if not navigate to login with return false otherwise return true
+			app.route.js
+				Routes>> path for each component, where add [auth-guard] those path would like to be secured
 			
