@@ -785,4 +785,37 @@ JavaScript:
 			Task:
 				Animating Placement Drive Card when mouse in and out 
 					which contains details such as CompanyName, CTC, Date
-
+		
+		Angular Directives:
+			changes/ add the behaviours ion the template elements
+				1. Template/ control flow  based directives:
+					for, if, else, switch
+				2. Attribute based directive:
+					adding attributes in the template element to change its behaviour
+					eg: create a directives which changes design/ content, 
+							to be added to template element
+						<h1></h1>		>> assume h1 font size by default 20px, 
+							change the size of h1 by new directives for example,
+								mySize
+						<h1 mySize>Welcome</h1>
+			Creation of directives:
+				ng g d folder/directive-name
+					src>> folder>> 
+							directive-name.ts
+							directive-name.spec.ts
+			Styling directive
+			Content Changeable
+			User input based directive
+			elapsing time to read article directive
+		
+			Task:
+				Create a directive SKILL which has to perform following 
+					a. getting user input SKILL
+					b. find matching roles
+					c. append the nativeElement content with found roles
+				
+				eg:
+					<h1 [appSkill]="java">Razak Mohamed</h1>
+					Output: 
+					Razak Mohamed
+					Matching roles are Full stack developer, Data Analyst
