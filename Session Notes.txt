@@ -819,3 +819,39 @@ JavaScript:
 					Output: 
 					Razak Mohamed
 					Matching roles are Full stack developer, Data Analyst
+		Unit Testing:
+			ViTest Documentation based
+			testing :
+				spec.ts
+			
+			How to test:
+				describe what you going to test
+					beforeEach>> execute before each test case runs
+					it>> where test case will be written
+						it(user defined name for test case,callBanckFunction(){
+							expect(component).toBe(result)
+						})
+					afterEach>> execute after each test case runs
+
+					test case >> assertions
+						toBeTruthy>> check instance created/ valid
+						toBe>> check against test data
+						toBeFalse
+						toBeTrue
+						toContain
+						toBeGreaterThanOrEquals
+						toBeLesserThanOrEquals
+			
+			How to run test:
+				ng test
+				npm test
+
+			Taken use case >> Tax Slab
+				Service Test>> Deduct
+				Directive Test>> IdentifySlab via host component(Integeration)
+				Component Test>> Testing actual Components (Integerated with directive)
+			
+			Task:
+				1. Create a service to check placement eligibility by receiving
+					10th mark, 12th markm cgpa should 70%, 70%,7.5 respectivley
+					Test this service
