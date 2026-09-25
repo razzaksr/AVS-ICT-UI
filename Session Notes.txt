@@ -820,7 +820,7 @@ JavaScript:
 					Razak Mohamed
 					Matching roles are Full stack developer, Data Analyst
 		Unit Testing:
-			ViTest Documentation based
+			ViTest Documentation based Jasmin
 			testing :
 				spec.ts
 			
@@ -845,6 +845,8 @@ JavaScript:
 			How to run test:
 				ng test
 				npm test
+
+			Since Angular projects are zoneless can'test via TestBed directly, however if we add "provideZonelessChangeDetection" provider we can
 
 			Taken use case >> Tax Slab
 				Service Test>> Deduct
