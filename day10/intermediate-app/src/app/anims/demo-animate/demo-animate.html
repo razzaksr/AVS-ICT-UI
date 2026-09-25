@@ -1,0 +1,18 @@
+<p>demo-animate works!</p>
+<button (click)="enableDisable()">
+    Animate
+</button>
+@if(isAnim()){
+    <div 
+    class="tech-card" 
+    animate.enter="activate-fade" 
+    animate.enter="deactivate-fade">
+
+        <h1>{{technician.name}}</h1>
+        @for(work of technician.works;track work){
+            <p>{{work}}</p>
+        }
+        <p>{{technician.baselocation}}</p>
+
+    </div>
+}

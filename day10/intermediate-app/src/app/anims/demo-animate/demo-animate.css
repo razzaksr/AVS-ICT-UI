@@ -1,0 +1,34 @@
+.tech-card{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: burlywood;
+    text-align: center;
+    width: max-content;
+}
+.activate-fade{
+    animation: diveFade 600ms ease-out;
+}
+.deactivate-fade{
+    animation: leaveFade 400ms ease-in;
+}
+@keyframes diveFade{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes leaveFade{
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}

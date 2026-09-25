@@ -743,4 +743,46 @@ JavaScript:
 				auth>> canActiveFn >> check every request whether loggedin or not if not navigate to login with return false otherwise return true
 			app.route.js
 				Routes>> path for each component, where add [auth-guard] those path would like to be secured
+		
+		Angular Modules:
+			available only in old angular version used to griup relavent components 
+			eg: handling hackathon, placement and other compoennts in same folder was difficult during the early versions
+			Compoennts:
+				Hackathon>> use case
+					schedule
+					view hackathons
+					edit hackathons
+					cancel hackathon
+				Placement companies: CRUD Compoents
 			
+			Solution: angular Module>> ng module
+				ng g m modules/module-name
+
+				module:
+					declarations	>> like seletors
+					imports			>> Components, Pipes, Directives, Selector, FormsModule
+					exports			>> enable current module elements to be used by others
+					providers		>> Routers, 
+					bootstrap		>> root module where you going to include the current
+				
+				Proposed way:
+					ng g m modules/hackathon
+					app/hackathon/
+							schedule
+							view hackathons
+							edit hackathons
+							cancel hackathon
+					
+					ng g m modules/drives
+							schedule-drive
+							view drives
+							cancel drive
+
+		Angular Animation:
+			old >> angular/animation
+			modern>> template>> animate.enter, animate.leave,.....
+
+			Task:
+				Animating Placement Drive Card when mouse in and out 
+					which contains details such as CompanyName, CTC, Date
+
