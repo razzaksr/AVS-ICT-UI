@@ -920,5 +920,40 @@ JavaScript:
 							the product name of clicked
 					child >>  receive product details from parent and 
 							send the name of the product to parent
+		
+		JSON-Server based CRUD App using HttpClient:
+			to start json-server:
+				npx json-server --watch filename.json --port 3000
 
+			angular/common/http	>> HttpClient
+			post
+			get
+			put
+			patch
+			delete
+
+			Conversion between JSON data in the backend with Interface object in the angular
+			JSON:
+				{
+					"name":"Samsung Galaxy 26 Ultra",
+					"cost":145000,
+					"ram":16
+				}
+				
+				Angular interface
+				interface Product{
+					name="",cost=0,ram=0
+				}
+
+				Observable<Interface>
+				Observable<Product>
+
+			Interface: where the received or sending object to/from the backend format
+
+			Configure HttpClient in app.config.ts as below:
+				providers:[provideHttpClient()]
+
+			Service: where CRUD connection to JSON-SERVER implemented
+			Components: Call the respective service 
 			
+		

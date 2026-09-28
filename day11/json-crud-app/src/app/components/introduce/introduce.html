@@ -1,0 +1,8 @@
+<p>introduce works!</p>
+<form (ngSubmit)="callSave()">
+    <input type="text" name="name" [(ngModel)]="pro.name" placeholder="Product name">
+    <input type="text" name="min" [(ngModel)]="pro.min" placeholder="Product Min balance">
+    <input type="text" name="amenitites" [(ngModel)]="pro.amenitites" placeholder="Product Amenities">
+    <input type="text" name="age" [(ngModel)]="pro.age" placeholder="Product max age">
+    <button type="submit">Save</button>
+</form>

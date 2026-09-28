@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": "7656789",
+      "name": "Zero Balance Account",
+      "age": 18,
+      "amenitites": "ATM Card",
+      "min": 0
+    },
+    {
+      "id": "987",
+      "name": "Savings Account",
+      "age": 50,
+      "amenitites": "ATM Card, Netbanking",
+      "min": 1000
+    },
+    {
+      "id": "546",
+      "name": "Demat Account",
+      "age": 40,
+      "amenitites": "Netbanking, Mobile banking",
+      "min": 0
+    },
+    {
+      "id": 0,
+      "name": "FD",
+      "age": "40",
+      "min": "87678",
+      "amenitites": "7.5"
+    },
+    {
+      "id": 0,
+      "name": "RD",
+      "age": "45",
+      "min": "2000",
+      "amenitites": "5.6"
+    }
+  ]
+}
