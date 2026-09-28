@@ -859,4 +859,25 @@ JavaScript:
 					Test this service
 		
 		Scroll To Directive:
+			Scoroll to Botton and Top decided at runtime using "input" from angular/core
+
+		Directives Composition API:
+			Bundle multiple directives with its desired element as package,
+				 which can be used later anywhere
+			Highlight>> directive1
+			Tooltip>> directive2
+			Appearance>> directive3
+			H1 >> element
+			eg: without Composition api
+				<h1 appHighlight appTooltip appAppearance>Simple element</h1>
+
+			How to implement Directive Composition:
+				1. Create all directives with host such as Highlight, Appearance, Tooltip
+				2. implement ng-content in the target component>> demo-composite
+				3. finally app.ts simply import target component(DemoCompiste), rather than each directives
+				4. app.html
+					<app-demo-directive tips="" cardColor="">
+						.....
+					</<app-demo-directive>
+
 			
