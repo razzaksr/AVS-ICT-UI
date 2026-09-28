@@ -879,5 +879,21 @@ JavaScript:
 					<app-demo-directive tips="" cardColor="">
 						.....
 					</<app-demo-directive>
+		
+		Nested Components:
+			Components Tree:
+				Assume:
+					Comp1 >> Card
+					Comp2 >> Table
+					root >> App
+				Tree:
+					Root 
+						Table
+						Card
+			Commnunication between Components while nesting components one another:
+				1. Parent to Child:
+					child variable get data from parent via "input()"
+					parent variable will be mapped to child properties
+				2. Child to Parent:
 
 			
