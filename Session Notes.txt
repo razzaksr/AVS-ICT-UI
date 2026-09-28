@@ -857,3 +857,6 @@ JavaScript:
 				1. Create a service to check placement eligibility by receiving
 					10th mark, 12th markm cgpa should 70%, 70%,7.5 respectivley
 					Test this service
+		
+		Scroll To Directive:
+			
