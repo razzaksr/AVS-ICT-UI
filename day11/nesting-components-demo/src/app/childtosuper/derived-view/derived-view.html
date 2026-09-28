@@ -1,0 +1,11 @@
+<div 
+    style="width: max-content;padding: 20px;margin: 10px;border-radius: 20px;box-shadow: 1px 1px 10px grey;"
+>
+    <h1>{{product()}}</h1>
+    <p>{{age()}}</p>
+    <p>{{balance()}}</p>
+    <p>{{features()}}</p>
+    <div>
+        <button (click)="action.emit(product())">Know More</button>
+    </div>
+</div>

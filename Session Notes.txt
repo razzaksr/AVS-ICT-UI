@@ -879,6 +879,27 @@ JavaScript:
 					<app-demo-directive tips="" cardColor="">
 						.....
 					</<app-demo-directive>
+			Directive Composition Rule:
+				Rule 1 – Static composition
+					Host directives are applied statically at compile time. 
+						You cannot dynamically add them at runtime.
+
+				Rule 2 – Selector is ignored
+					When a directive is used through hostDirectives, 
+						Angular does not use that directive's selector to decide 
+							whether it applies.
+
+				Rule 3 – Inputs aren't automatically exposed
+				If:
+				AppearanceDirective has shade
+				the parent cannot automatically write:
+					<app-training-card shade="red">
+				unless we expose it:
+					inputs: ['shade: cardColor']
+
+				Rule 4 – Composition is reusable behavior
+					Use it when a component should always have certain behaviors.
+
 		
 		Nested Components:
 			Components Tree:
@@ -895,5 +916,9 @@ JavaScript:
 					child variable get data from parent via "input()"
 					parent variable will be mapped to child properties
 				2. Child to Parent:
+					parent>> bank products sent to child and received 
+							the product name of clicked
+					child >>  receive product details from parent and 
+							send the name of the product to parent
 
 			

@@ -1,0 +1,10 @@
+<p>parent-view works!</p>
+@for (product of products; track product) {
+    <app-derived-view 
+    [product]="product.name"
+    [age]="product.age"
+    [balance]="product.min"
+    [features]="product.amenitites"
+    (action)="onKnowMore($event)"
+    />
+}
